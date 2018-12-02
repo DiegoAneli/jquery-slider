@@ -16,7 +16,7 @@
   height: 80%;
   width: 100%;
   margin: auto;
-  background: blue;
+  position: relative;
 }
 
 .slider-wrapper .images {
@@ -27,5 +27,51 @@
 
 .slider-wrapper .images img {
   height: 100%;
+  display: none;
+
+}
+
+.slider-wrapper .images img.active {
+  display: inline-block;
+
+}
+
+.prev, .next {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  top: 50%;
+  left: 0;
+  transform: rotateY(-50%);
+  cursor: pointer;
+  color: grey;
+
+}
+
+.next {
+  left: auto;
+  right: 0;
+
+}
+
+.nav {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 33%;
+  transform: matrix(-50%);
+  /* bottom: 0; */
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 999px;
+  color: white;
+}
+
+.nav > i {
+  margin:0 20px;
+
+}
+
+.nav > i.active {
+  color: black;
 
 }
