@@ -1,0 +1,31 @@
+*{
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 70%;;
+  margin: 0 auto;
+
+}
+
+.slider-wrapper {
+  height: 80%;
+  width: 100%;
+  margin: auto;
+  background: blue;
+}
+
+.slider-wrapper .images {
+  height: 100%;
+  text-align: center;
+
+}
+
+.slider-wrapper .images img {
+  height: 100%;
+
+}
